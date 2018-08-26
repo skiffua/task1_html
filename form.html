@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate">
+    <title>Poll</title>
+</head>
+<body>
+<h2>If you want to go to the <strong>Mars</strong>, you need fll the next form:</h2>
+<form enctype="multipart/form-data" method="post" name="mypoll" target="_blank">
+    <label>
+        Your name*
+        <input type="text" required title="your name">
+    </label> <br>
+    <label>
+        Your surname*
+        <input type="text" required title="your_surname">
+    </label>  <br>
+    <label>Your sex
+        <input type="text" title="your">
+    </label> <br>
+    <label>Your age
+        <input type="number" title="your_age">
+    </label>  <br>
+    <fieldset>
+        <legend>Your perfect color</legend>
+            <label>
+                <input name="color" type="radio" value="red">red
+            </label>
+            <label>
+                <input name="color" type="radio" value="white">white
+            </label>
+            <label>
+                <input name="color" type="radio" value="green">green
+            </label>
+            <label>
+                <input name="color" type="radio" value="daltonian">I'm a daltonian
+            </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Your skills</legend>
+        <label>
+            <input name="skill[]" type="checkbox" value="office">office manadger
+        </label>
+        <label>
+            <input name="skill[]" type="checkbox" value="graphics">graphics designer
+        </label>
+        <label>
+            <input name="skill[]" type="checkbox" value="programmer">programmer
+        </label>
+        <label>
+            <input name="skill[]" type="checkbox" value="secretary">secretary
+        </label>
+    </fieldset> <br>
+        <label>load your photo (max 3mb, .jpg format)
+            <input type="file" accept="image/jpeg" size=""/>
+        </label><br>
+
+        <label>
+            What city do want to live in?
+            <select name="city" size="5">
+                <optgroup label="USA">
+                    <option value="ny">New York</option>
+                    <option value="la">Los Angeles</option>
+                </optgroup>
+                <optgroup label="UA">
+                    <option value="ky">Kyiv</option>
+                    <option value="lv">Lviv</option>
+                    <option value="lv">Odesa</option>
+                </optgroup>
+
+            </select>
+
+
+        </label> <br>
+
+        <label> Why do you want to go to the Mars?
+            <textarea wrap="hard" cols="30" rows="2"></textarea>
+        </label> <br>
+
+        <fieldset>
+            <legend>Please choose a date when you want to trip to the Mars?</legend>
+            <label>choose between 28.08 and 31.12.2018...
+                <input type="date" min="2018-08-28" max="2018-12-31"/>
+
+            </label>
+
+
+        </fieldset>
+
+
+
+    <input type="submit" value="відправити дані"/> <br>
+    <input type="reset" value="очистити дані"/>
+
+
+
+
+
+</form>
+</body>
+</html>
